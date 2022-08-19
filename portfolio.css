@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Source+Serif+Pro:wght@300;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.sidebar{
+    background-color: rgb(219, 79, 103);
+    width: 120vw;
+    font-family: 'Fira Sans',sans-serif;
+    height: 25vh;
+    margin : auto;
+    padding-top: 0;
+    word-spacing: 20px;
+}
+.sidebar nav{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 45px;
+    padding-left: 730px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    display: inline-block;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color:white;
+}
+.sidebar nav li a:hover{
+    color: black;
+}
+.main{
+    width: 120vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding:0;
+    background-color: aquamarine;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+.infocontainer{
+    height: 50vh;
+    width: 80vw;
+    margin: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Serif Pro', serif;
+}
+.hello{
+    font-size: 50px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Fira Sans',sans-serif;
+    background-image: url("Circle.png");
+    background-size:10px;
+    animation-name: wave ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.about{
+    font-size: 40px;
+}
+.btn button{
+    margin-top: 34px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    font-weight: bold;
+    color: wheat;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: azure;
+    color:black;
+}
+.pic img{
+    width: 150px;
+    height: 50vh;
+    background-size: contain;
+    transform:translate(-180%,0);
+    position:relative;
+    background-image: url("Neon.png");
+    background-size:20px;
+    background-color: black;
+    border-radius: 40px;
+    border-top-color: orange;
+    border-bottom-color: orange;
+}
+.bottom{
+    background-color:black;
+    width: 120vw;
+    height: 25vh;
+    padding: 0px;
+    word-spacing: 150px;
+    bottom:0;
+    position:relative;
+    transform: translate(0,-1%);
+    text-align: center;
+    justify-content: space-around;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.bottom nav li{
+    list-style: none;
+    font-size: 25px;
+    display: inline-block;
+    padding-top: 25px;
+}
+.bottom .fa{
+    text-decoration: none;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    width:30px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(52, 186, 52);
+}
+.fa-beat-fade{
+    --fa-animation-duration:5s;
+    --fa-animation-iteration-count:infinite;
+    --fa-beat-fade-opacity:0.1;
+}
+.bottom nav li a:hover{
+    color: white;
+} 
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+@keyframes spin {
+    from{background-color: rgb(15, 4, 141);}
+    to{background-color: blueviolet;}
+    
+}
+@keyframes wave {
+0%{color:black;font-size: 50px;}
+25%{color:red;font-size: 70px;}
+50%{color:purple;font-size: 100px;}
+75%{color:brown;font-size: 120px;}
+100%{color:white;font-size: 50px;}    
+}
+@media(max-width:1190px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(-10%,-20%);  
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+}
+@media(max-width:1073px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(-10%,-30%);  
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 150px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-170%,-20%);
+        position:relative;
+     }
+}
+@media(max-width:975px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(-10%,-30%);  
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 150px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-130%,-20%);
+        position:relative;
+     }
+}
+@media(max-width:900px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(-10%,-30%);  
+     }
+     .infocontainer{
+        width: 70vw;
+     }
+     .name{
+        background-size: 5px;
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 150px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-100%,-20%);
+        position:relative;
+     }
+}
+@media(max-width:843px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(1%,-30%);  
+     }
+     .infocontainer{
+        width:60vw;
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 120px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-120%,-20%);
+        position:relative;
+     }
+}
+@media(max-width:800px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(10%,-30%);  
+     }
+     .name{
+        animation-play-state: paused;
+     }
+     .infocontainer{
+        width:auto;
+     }
+     .about{
+        font-size: 20px;
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 120px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-60%,-20%);
+        position:relative;
+     }
+}
+@media(max-width:775px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(10%,-30%); 
+     }
+     .name{
+        animation-play-state: paused;
+        background-size: 3px;
+     }
+     .infocontainer{
+        width:60vw;
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 120px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-70%,-20%);
+        position:relative;
+     }
+}
+@media(max-width:560px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(10%,-30%);
+        width:auto;  
+     }
+     .name{
+        animation-play-state: paused;
+     }
+     .infocontainer{
+        width:60vw;
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 120px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-60%,-20%);
+        position:relative;
+     }
+}
+@media(max-width:490px){
+    .main{
+        background-color: white;
+    }
+    .sidebar{
+        background-color: white;
+    }
+    .Info{
+        position: relative; 
+        transform: translate(10%,-30%); 
+        width:auto; 
+     }
+     .name{
+        animation-play-state: paused;
+     }
+     .infocontainer{
+        width:60vw;
+     }
+     .bottom{
+        word-spacing: 100px;
+        transform:translate(-5%,0);
+     }
+     .pic img{
+        width: 150px;
+        height: 50vh;
+        background-size: contain;
+        transform:translate(-50%,-20%);
+        position:relative;
+     }
+}

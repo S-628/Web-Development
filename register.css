@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.Form{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    border-bottom: 30px;
+    border-top: 30px;
+    border-right:0em;
+    border-right-color:white;
+    border-left-color: white; 
+    border-top-color: rgba(159, 151, 151, 0.95); 
+    border-bottom-color: rgba(159, 151, 151, 0.95); 
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-style: solid;
+    border-spacing: 100px; 
+    height: 300%;
+    width: 100%;
+    padding-left: 6%;
+
+}
+body{
+    align-items: center;
+    justify-content: center;
+}
+.inner{
+    border-top: 30px;
+    border-left: 30px;
+    border-bottom: 30px;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    border-left-color: darkblue;
+    border-right-color: white;
+}
+.image-fluid{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    white-space: none;
+    border-top: 30px;
+    border-left: 30px;
+    border-bottom: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    border-left-color: darkblue;
+    border-right-color: white;
+}
+.form-row{
+    font-size: medium;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    display: flex;
+}
+.form-label{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+    white-space: nowrap;
+}
+.form-link{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    justify-content: left;
+}
+.form-check-input{
+    margin-top: 10px;
+}
+.btn1{
+    background-color:rgb(19, 19, 237);
+    font-style:white;
+    color: white;
+    outline: none;
+    height: 40px;
+    width: 80%;
+    border:none;
+    border-radius: 6px;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn1:hover{
+    background-color: white;
+    border: 1px solid;
+    color: black;
+}
+.font-weight-bold{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal ;
+    font-weight: bolder;
+}
+.top{
+    font-weight: bolder;
+    color:rgba(8, 8, 60, 0.89);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 340%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.bottom{
+    margin-top: 100px;
+    word-spacing: 40px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(199, 191, 191, 0.904);
+    text-align-last: center;
+}
+.bottom:hover{
+    color: black;
+}
+@media screen and (max-width: 576px)
+{
+    #image-fluid{
+        display: block;
+    }
+    #container{
+        display:block;
+    }
+}
